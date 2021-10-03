@@ -2,6 +2,8 @@ import React from "react";
 import { Container } from "react-bootstrap";
 import { Route } from "react-router";
 import "./MainLayout.scss";
+import Header from "../../Components/Header/Header";
+import Footer from "../../Components/Footer/Footer";
 
 class MainLayout extends React.Component {
   render() {
@@ -16,11 +18,13 @@ class MainLayout extends React.Component {
           <div id="stars3"></div>
           <div className="main-layout">
 
+            <Header/>
 
-            <Container>
+            <Container className="my-3">
               <Component />
             </Container>
 
+            <Footer/>
 
 
           </div>
