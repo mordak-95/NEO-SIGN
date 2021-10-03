@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/neo-sign/static/css/main.382e20cb.chunk.css",
+    "main.js": "/neo-sign/static/js/main.7faac81c.chunk.js",
+    "main.js.map": "/neo-sign/static/js/main.7faac81c.chunk.js.map",
+    "runtime-main.js": "/neo-sign/static/js/runtime-main.9654658f.js",
+    "runtime-main.js.map": "/neo-sign/static/js/runtime-main.9654658f.js.map",
+    "static/css/2.f2512455.chunk.css": "/neo-sign/static/css/2.f2512455.chunk.css",
+    "static/js/2.6ee210c4.chunk.js": "/neo-sign/static/js/2.6ee210c4.chunk.js",
+    "static/js/2.6ee210c4.chunk.js.map": "/neo-sign/static/js/2.6ee210c4.chunk.js.map",
+    "static/js/3.71186a94.chunk.js": "/neo-sign/static/js/3.71186a94.chunk.js",
+    "static/js/3.71186a94.chunk.js.map": "/neo-sign/static/js/3.71186a94.chunk.js.map",
+    "index.html": "/neo-sign/index.html",
+    "static/css/2.f2512455.chunk.css.map": "/neo-sign/static/css/2.f2512455.chunk.css.map",
+    "static/css/main.382e20cb.chunk.css.map": "/neo-sign/static/css/main.382e20cb.chunk.css.map",
+    "static/js/2.6ee210c4.chunk.js.LICENSE.txt": "/neo-sign/static/js/2.6ee210c4.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.9654658f.js",
+    "static/css/2.f2512455.chunk.css",
+    "static/js/2.6ee210c4.chunk.js",
+    "static/css/main.382e20cb.chunk.css",
+    "static/js/main.7faac81c.chunk.js"
+  ]
+}
