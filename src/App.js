@@ -1,6 +1,7 @@
 import React from "react";
 import AppRoutes from "./AppRoutes";
 import { BrowserRouter as Router, Switch } from 'react-router-dom';
+import "./App.scss";
 
 class App extends React.Component {
   render() {
