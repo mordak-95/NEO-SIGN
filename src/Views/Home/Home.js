@@ -6,14 +6,14 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <Col xs={12} className=" bg-primary p-5">sss</Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
-        <Col xs={12} className=" bg-primary p-5"></Col>
+        <div className="bg-primary px-5 py-3 d-flex justify-content-center mb-3">Home</div>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
+        <Col xs={12} className=" bg-success p-5 mb-2"></Col>
       </div>
       
     );
