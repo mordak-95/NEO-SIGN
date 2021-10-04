@@ -10,8 +10,8 @@ class App extends React.Component {
         <Switch>
           {
             AppRoutes.map((routeInfo,index) => {
-              const {Layout, path, Component, exact} = routeInfo;
-              return (<Layout key={index} path={path} component={Component} exact={exact}/>);
+              const {Layout, path, Component, exact, from, to} = routeInfo;
+              return (<Layout key={index} path={path} component={Component} exact={exact}  from={from}  to={to}/>);
             })
           }
         </Switch>
