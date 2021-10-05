@@ -1,0 +1,70 @@
+@import "variables";
+
+@font-face {
+  font-family: '#{$icomoon-font-family}';
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?697zgb');
+  src:  url('#{$icomoon-font-path}/#{$icomoon-font-family}.eot?697zgb#iefix') format('embedded-opentype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.ttf?697zgb') format('truetype'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.woff?697zgb') format('woff'),
+    url('#{$icomoon-font-path}/#{$icomoon-font-family}.svg?697zgb##{$icomoon-font-family}') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="neo-icon-"], [class*=" neo-icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: '#{$icomoon-font-family}' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.neo-icon-droplet {
+  &:before {
+    content: $neo-icon-droplet; 
+  }
+}
+.neo-icon-paint-format {
+  &:before {
+    content: $neo-icon-paint-format; 
+  }
+}
+.neo-icon-clubs {
+  &:before {
+    content: $neo-icon-clubs; 
+  }
+}
+.neo-icon-diamonds {
+  &:before {
+    content: $neo-icon-diamonds; 
+  }
+}
+.neo-icon-files-empty {
+  &:before {
+    content: $neo-icon-files-empty; 
+  }
+}
+.neo-icon-file-text2 {
+  &:before {
+    content: $neo-icon-file-text2; 
+  }
+}
+.neo-icon-credit-card {
+  &:before {
+    content: $neo-icon-credit-card; 
+  }
+}
+.neo-icon-calculator {
+  &:before {
+    content: $neo-icon-calculator; 
+  }
+}
+

@@ -1,26 +1,93 @@
-html{
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
+$primary-color: #fe413d;
+$secondary-color: #fdbc2c;
+$black-color: #222;
+$white-color: #fff;
+$title-font-size: 1.2em;
+$menu-font-size: 1em;
+$text-font-size: 0.8em;
+
+
+
+.primary-color{
+  color: $primary-color;
+}
+
+.secondary-color{
+  color: $secondary-color;
+}
+
+.black-color{
+  color: $black-color;
+}
+
+.white-color{
+  color: $white-color;
+}
+
+.primary-background{
+  background-color: $primary-color;
+}
+
+.secondary-background{
+  background-color: $secondary-color;
+}
+
+.title-font-size {
+  font-size: $title-font-size;
+}
+
+.menu-font-size {
+  font-size: $menu-font-size;
+}
+
+.text-font-size {
+  font-size: $text-font-size;
+}
+
+.bold-font {
+  font-weight: bold;
+}
+
+html {
+  font-size: 16px;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+button {
+  box-shadow: none !important;
+}
+
+.text-decoration-none {
+  text-decoration: none !important;
+}
+
+.hover-primary:hover {
+  color: $primary-color;
+}
+
+.hover-secondary:hover {
+  color: $secondary-color;
 }
 
 /* width */
 ::-webkit-scrollbar {
-    width: 6px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: transparent; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 3px; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: #555; 
-  }
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 3px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
