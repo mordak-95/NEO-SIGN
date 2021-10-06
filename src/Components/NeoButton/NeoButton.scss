@@ -1,12 +1,134 @@
 @import "../../App.scss";
 
 .neo-button {
-    outline: none;
-    border-radius: 0.4em;
+  outline: none;
+  border: none;
+  background: none;
+  vertical-align: middle;
+  position: relative;
+  -webkit-backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition: border-color 0.3s, color 0.3s;
+  transition: border-color 0.3s, color 0.3s;
+  -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+  z-index: 1;
+}
+
+.neo-button::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 150%;
+  height: 100%;
+  background: #37474f;
+  z-index: -1;
+  -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
+  -webkit-transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
+  -webkit-transition: -webkit-transform 0.3s, opacity 0.3s,
+    background-color 0.3s;
+  transition: transform 0.3s, opacity 0.3s, background-color 0.3s;
 }
 
 .button-small {
-    padding: 0.1em 0.5em;
-    font-size: $text-font-size;
+  padding: 0.2em 0.5em;
+  font-size: $text-font-size;
+}
+.icon-button-small {
+  padding: 0.1em;
+  font-size: $text-font-size;
 }
 
+.button-normal {
+  padding: 0.4em 1em;
+  font-size: $menu-font-size;
+}
+.icon-button-normal {
+  padding: 0.4em;
+  font-size: $menu-font-size;
+}
+
+.button-large {
+  padding: 0.7em 1.3em;
+  font-size: $title-font-size;
+}
+.icon-button-large {
+  padding: 0.7em;
+  font-size: $title-font-size;
+}
+
+.button-primary-fill {
+  background-color: $primary-color;
+  color: $white-color;
+  border: solid 2px $primary-color;
+  &:hover {
+    color: $black-color;
+    border: solid 2px $secondary-color;
+    &::before {
+      opacity: 1;
+      background-color: $secondary-color;
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+  }
+}
+
+.button-secondary-fill {
+  background-color: $secondary-color;
+  color: $black-color;
+  border: solid 2px $secondary-color;
+  &:hover {
+    color: $white-color;
+    border: solid 2px $primary-color;
+    &::before {
+      opacity: 1;
+      background-color: $primary-color;
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+  }
+}
+
+.button-primary-outline {
+  background-color: transparent;
+  color: $primary-color;
+  border: solid 2px $primary-color;
+  &:hover {
+    color: $white-color;
+    border: solid 2px $primary-color;
+    &::before {
+      opacity: 1;
+      background-color: $primary-color;
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+  }
+}
+
+.button-secondary-outline {
+  background-color: transparent;
+  color: $secondary-color;
+  border: solid 2px $secondary-color;
+  &:hover {
+    color: $black-color;
+    border: solid 2px $secondary-color;
+    &::before {
+      opacity: 1;
+      background-color: $secondary-color;
+      -webkit-transform: rotate3d(0, 0, 1, 0deg);
+      transform: rotate3d(0, 0, 1, 0deg);
+      -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+      transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+    }
+  }
+}

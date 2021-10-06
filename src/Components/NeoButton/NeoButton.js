@@ -4,30 +4,41 @@ import "./NeoButton.scss";
 class NeoButton extends React.Component {
     render() {
 
-        const size = this.props.size ? "button-" + this.props.size : "button-normal";
-        const color = this.props.color ? this.props.color : "primary";
-        const figure = this.props.figure ? this.props.figure : "fill";
-        const theme = color + "-" + figure
-        const buttonClass = "neo-button " + size + " " + theme;
+        let size = this.props.size;
+        let lable = this.props.lable;
+        let startIcon = this.props.startIcon;
+        let endIcon = this.props.endIcon;
+        let color = this.props.color;
+        let figure = this.props.figure;
+        let classes = this.props.class;
+
+        size = size === "small" || size === "large" ? "button-" + size : "button-normal";
+        size = lable ? size : "icon-" + size;
+
+        color = color === "primary" || color === "secondary"  ? color : "primary";
+        figure = figure === "fill" || figure === "outline" ? figure : "fill";
+        const theme = "button-" + color + "-" + figure;
+
+        classes = classes + "m-2";
+
+        const buttonClass = "neo-button " + size + " " + theme + " " + classes;
 
         return (
-            <div>
                 <button className={buttonClass}>
 
-                    {this.props.startIcon
-                    ? <span className={this.props.startIcon + " me-2"} />
+                    {startIcon
+                    ? <span className={startIcon + " me-2"} />
                     : null
                     }
                     
-                    {this.props.lable}
+                    {lable}
 
-                    {this.props.endIcon
-                    ? <span className={this.props.endIcon + " ms-2"} />
+                    {endIcon
+                    ? <span className={endIcon + " ms-2"} />
                     : null
                     }
 
                 </button>
-            </div>
 
         );
     }
