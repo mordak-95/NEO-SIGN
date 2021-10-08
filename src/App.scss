@@ -1,7 +1,9 @@
 $primary-color: #fe413d;
 $secondary-color: #fdbc2c;
-$black-color: #222;
-$white-color: #fff;
+$dark-color: #0e1722;
+$dark-color-transparent: #0e1722d2;
+$dark-outline-color: #383d44d2;
+$light-color: #ffffff;
 $title-font-size: 1.2em;
 $menu-font-size: 1em;
 $text-font-size: 0.8em;
@@ -16,12 +18,12 @@ $text-font-size: 0.8em;
   color: $secondary-color;
 }
 
-.black-color{
-  color: $black-color;
+.dark-color{
+  color: $dark-color;
 }
 
-.white-color{
-  color: $white-color;
+.light-color{
+  color: $light-color;
 }
 
 .primary-background{
@@ -32,12 +34,13 @@ $text-font-size: 0.8em;
   background-color: $secondary-color;
 }
 
-.white-background{
-  background-color: $white-color;
+.light-background{
+  background-color: $light-color;
 }
 
-.black-background{
-  background-color: $black-color;
+.dark-background{
+  background-color: $dark-color-transparent;
+  border: solid 1px $dark-outline-color ;
 }
 
 .title-font-size {

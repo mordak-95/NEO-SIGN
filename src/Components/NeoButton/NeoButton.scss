@@ -63,10 +63,10 @@
 
 .button-primary-fill {
   background-color: $primary-color;
-  color: $white-color;
+  color: $light-color;
   border: solid 2px $primary-color;
   &:hover {
-    color: $black-color;
+    color: $dark-color;
     border: solid 2px $secondary-color;
     &::before {
       opacity: 1;
@@ -81,10 +81,10 @@
 
 .button-secondary-fill {
   background-color: $secondary-color;
-  color: $black-color;
+  color: $dark-color;
   border: solid 2px $secondary-color;
   &:hover {
-    color: $white-color;
+    color: $light-color;
     border: solid 2px $primary-color;
     &::before {
       opacity: 1;
@@ -102,11 +102,11 @@
   color: $primary-color;
   border: solid 2px $primary-color;
   &:hover {
-    color: $white-color;
-    border: solid 2px $primary-color;
+    color: $dark-color;
+    border: solid 2px $secondary-color;
     &::before {
       opacity: 1;
-      background-color: $primary-color;
+      background-color: $secondary-color;
       -webkit-transform: rotate3d(0, 0, 1, 0deg);
       transform: rotate3d(0, 0, 1, 0deg);
       -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
@@ -120,11 +120,11 @@
   color: $secondary-color;
   border: solid 2px $secondary-color;
   &:hover {
-    color: $black-color;
-    border: solid 2px $secondary-color;
+    color: $light-color;
+    border: solid 2px $primary-color;
     &::before {
       opacity: 1;
-      background-color: $secondary-color;
+      background-color: $primary-color;
       -webkit-transform: rotate3d(0, 0, 1, 0deg);
       transform: rotate3d(0, 0, 1, 0deg);
       -webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);

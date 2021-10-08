@@ -9,7 +9,7 @@ class Home extends React.Component {
       <div>
         <div className="primary-background px-5 py-4 d-flex justify-content-center mb-3">Home</div>
 
-        <Col xs={12} className=" black-background p-4 mb-2">
+        <Col xs={12} className="dark-background p-4 mb-2">
           <NeoButton
             size="large"
             lable="Mine"
