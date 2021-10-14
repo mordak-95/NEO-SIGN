@@ -1,5 +1,28 @@
 @import "../../App.scss";
 
-.navbar{
-    background-color: $dark-color-transparent ;
+.navbar {
+  background-color: $dark-color-transparent;
+}
+
+.nav-item {
+  font-size: $menu-font-size;
+  font-weight: bold;
+  color: $light-color;
+  &:hover {
+    color: $light-color-hover;
+  }
+}
+
+.selected-item {
+  color: $primary-color;
+  &::before {
+    content: "";
+    position:absolute;
+    width: 80px;
+    height: 2px;
+	background: $primary-color;
+    margin-top: 2em;
+    margin-left: -0.5em;
+
+  }
 }

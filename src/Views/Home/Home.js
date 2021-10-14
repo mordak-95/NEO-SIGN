@@ -34,7 +34,7 @@ class Home extends React.Component {
             startIcon="neo-icon-droplet"
             endIcon="neo-icon-diamonds"
             color="primary"
-            figure="outline"
+            figure="fill"
             class=""
           />
           <NeoButton
@@ -43,7 +43,7 @@ class Home extends React.Component {
             startIcon="neo-icon-droplet"
             endIcon="neo-icon-diamonds"
             color="secondary"
-            figure="outline"
+            figure="fill"
             class=""
           />
         </Col>

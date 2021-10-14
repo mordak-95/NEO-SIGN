@@ -18,7 +18,7 @@ class MainLayout extends React.Component {
           <div id="stars3"></div>
           <div className="main-layout">
 
-            <Header/>
+            <Header {...rest}/>
 
             <Container className="my-3">
               <Component />

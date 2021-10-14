@@ -27,14 +27,14 @@ class NeoButton extends React.Component {
                 <button className={buttonClass}>
 
                     {startIcon
-                    ? <span className={startIcon + " me-2"} />
+                    ? <span className={startIcon + (!lable && !endIcon ? "" : " me-2")} />
                     : null
                     }
                     
                     {lable}
 
                     {endIcon
-                    ? <span className={endIcon + " ms-2"} />
+                    ? <span className={endIcon + (!lable && !startIcon ? "" : " ms-2")} />
                     : null
                     }
 
